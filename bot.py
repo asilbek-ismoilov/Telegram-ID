@@ -73,9 +73,6 @@ async def get_chat_id(message: Message):
     text = "🏷 ID: <code>{id}</code>".format(id=id)
     await message.answer(text,reply_markup=get_id)
 
-
-
-
 #help commands
 @dp.message(Command("help"))
 async def help_commands(message:Message):
@@ -88,7 +85,7 @@ async def help_commands(message:Message):
 async def about_commands(message:Message):
     await message.answer("""🤩 In this bot you can get the id of any group, channel, user or bot
 
-👨🏻‍💻 Admin: @MuslimMuslih""")
+👨🏻‍💻 Admin: @Asilbek_Ismoilov_AI""")
 
 
 @dp.message(Command("admin"),IsBotAdminFilter(ADMINS))
